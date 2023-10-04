@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+
+</head>
+<body>
+    <div class="outerContainer">
+
+        <div class="passContainer">
+            <p id="heading">Password Generator</p>
+            <div class="passbox">
+                <input type="text" id="passField" readonly>
+                <span id="copyIcon" class="material-icons">content_copy</span>
+            </div>
+
+            <input type="range" id="valSlider" min="1" max="30" value="8">
+
+            <div class="slider">
+                <p id="passlength">Password Length</p>
+                <span id="valSliderOutput">6</span>
+            </div>
+            <div class="row">
+                <label for="lowerCase">Include LowerCase Letters (a-z)</label>
+                <input type="checkbox" id="lowerCase" checked>
+            </div>
+            <div class="row">
+                <label for="upperCase">Include UpperCase Letters (A-Z)</label>
+                <input type="checkbox" id="upperCase" checked>
+            </div>
+
+            <div class="row">
+                <label for="number">Include Numbers (0-9)</label>
+                <input type="checkbox" id="number" checked>
+            </div>
+            <div class="row">
+                <label for="symbol">Include Symbols (@-*)</label>
+                <input type="checkbox" id="symbol" checked>
+            </div>
+
+            <div class="passGenBtn">
+                <button type="button" id="passbtn">Generate Password</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
