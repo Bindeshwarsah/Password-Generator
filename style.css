@@ -75,10 +75,12 @@
 }
 .row label{
     width: 100%;
+    cursor: pointer;
 }
 .row input[type="checkbox"]{
     width: 1.5rem;
     height: 1.5rem;
+    cursor: pointer;
 }
 .passGenBtn{
     display: flex;
